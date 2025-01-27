@@ -5,9 +5,21 @@ var submit_length = document.querySelectorAll(".submit").length;
 
 var input_length = document.querySelectorAll(".input").length;
 
+var exit_buttons = document.querySelectorAll(".exit_riddle");
+
 var track_riddle = 0; //variable to track the current riddle
 
 var answers = [8, 29, 401, 93, 4536, 2016, 6481, 676, 6, 114];
+
+exit_buttons.forEach((button, index) => {
+    button.addEventListener("click", function(){
+        let exit_index = index;
+        console.log("I am here");
+        document.querySelectorAll(".riddle")[exit_index].classList.add("hidden");
+        document.querySelector(".container").classList.remove("hidden");
+        
+    });
+});
 
 document.querySelector(".back").addEventListener("click", function(){
     document.querySelector(".win").classList.add("hidden");
@@ -48,6 +60,8 @@ for (j=0; j<submit_length; j++){
         }
     });
 };
+
+
 
 // Loop through the riddle buttons and add Event Listener
 for (i=0; i<riddle_length; i++){
