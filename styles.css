@@ -75,6 +75,10 @@ body{
     font-size: 170%;
 }
 
+.footer{
+    color: white;
+}
+
 @media (max-width: 1000px){
     .container{
         display: grid;
