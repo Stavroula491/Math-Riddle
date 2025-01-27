@@ -7,7 +7,7 @@ var input_length = document.querySelectorAll(".input").length;
 
 var track_riddle = 0; //variable to track the current riddle
 
-var answers = [8, 29, 401, 93, 4536, 15, 793, 676, 2, 114];
+var answers = [8, 29, 401, 93, 4536, 2016, 6481, 676, 6, 114];
 
 document.querySelector(".back").addEventListener("click", function(){
     document.querySelector(".win").classList.add("hidden");
