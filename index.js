@@ -14,7 +14,6 @@ var answers = [8, 29, 401, 93, 4536, 2016, 6481, 676, 6, 114];
 exit_buttons.forEach((button, index) => {
     button.addEventListener("click", function(){
         let exit_index = index;
-        console.log("I am here");
         document.querySelectorAll(".riddle")[exit_index].classList.add("hidden");
         document.querySelector(".container").classList.remove("hidden");
         
