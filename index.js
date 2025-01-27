@@ -12,7 +12,7 @@ var answers = [8, 29, 401, 93, 4536, 2016, 6481, 676, 6, 114];
 document.querySelector(".back").addEventListener("click", function(){
     document.querySelector(".win").classList.add("hidden");
     document.querySelector(".container").classList.remove("hidden");
-})
+    });
 
 // Loop through the submit buttons and add Event Listener
 for (j=0; j<submit_length; j++){
@@ -110,6 +110,6 @@ for (i=0; i<riddle_length; i++){
 
         }
 
-    })
+    });
 
-}
+};
